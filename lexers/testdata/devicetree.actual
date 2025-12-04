@@ -1,0 +1,14 @@
+/dts-v1/;
+
+/ {
+    a-node {
+        subnode_nodelabel: a-sub-node {
+            foo = <3>;
+        };
+    };
+};
+
+gpi_dma2: dma-controller@a00000 {
+    compatible = "qcom,sm8550-gpi-dma", "qcom,sm6350-gpi-dma";
+    reg = <0x0 0x00a00000 0x0 0x60000>;
+};
